@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#define NUMBER_SIZE		45
+#define NUMBER_SIZE		7
 
 using namespace std;
 
@@ -36,6 +36,7 @@ void PickNumber()
 	{
 		cout << "번호를 선택하세요 : ";
 		cin >> PlayerNumbers[i];
+		ComputerNumbers[i] = PlayerNumbers[i];
 	}
 }
 
@@ -51,7 +52,7 @@ void PrintResult()
 
 		if (ComputerNumbers[i] == PlayerNumbers[i])
 		{
-			if (i == 7)
+			if (i == 6)
 			{
 				IsBonus = true;
 			}
