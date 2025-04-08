@@ -36,7 +36,6 @@ void PickNumber()
 	{
 		cout << "번호를 선택하세요 : ";
 		cin >> PlayerNumbers[i];
-		ComputerNumbers[i] = PlayerNumbers[i];
 	}
 }
 
